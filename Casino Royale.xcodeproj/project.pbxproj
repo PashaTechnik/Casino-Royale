@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		84B003DE272F199E001A5E4E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B003DD272F199E001A5E4E /* main.swift */; };
+		84B003E6272F1A29001A5E4E /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B003E5272F1A29001A5E4E /* GameResult.swift */; };
+		84EE05A7272F30000037BC96 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE05A6272F30000037BC96 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		84B003DA272F199E001A5E4E /* Casino Royale */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Casino Royale"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B003DD272F199E001A5E4E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		84B003E5272F1A29001A5E4E /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
+		84EE05A6272F30000037BC96 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				84B003DD272F199E001A5E4E /* main.swift */,
+				84B003E5272F1A29001A5E4E /* GameResult.swift */,
+				84EE05A6272F30000037BC96 /* NetworkManager.swift */,
 			);
 			path = "Casino Royale";
 			sourceTree = "<group>";
@@ -119,7 +125,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EE05A7272F30000037BC96 /* NetworkManager.swift in Sources */,
 				84B003DE272F199E001A5E4E /* main.swift in Sources */,
+				84B003E6272F1A29001A5E4E /* GameResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +252,7 @@
 		84B003E2272F199E001A5E4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99U8W5YTFV;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -255,6 +264,7 @@
 		84B003E3272F199E001A5E4E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99U8W5YTFV;
 				ENABLE_HARDENED_RUNTIME = YES;
