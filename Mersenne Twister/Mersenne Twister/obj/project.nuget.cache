@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "84yXXTq9RriWgJYztx4pV7xDqaq6SxGTfKhno2mC4M1bpUCVmDmGwSj9q14GJBH1iVWytRIkb9eJpBibipGO4w==",
+  "success": true,
+  "projectFilePath": "/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/Mersenne Twister.csproj",
+  "expectedPackageFiles": [
+    "/Users/pasha/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

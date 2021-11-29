@@ -1,0 +1,16 @@
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/bin/Debug/net5.0/Mersenne Twister.deps.json
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/bin/Debug/net5.0/Mersenne Twister.runtimeconfig.json
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/bin/Debug/net5.0/Mersenne Twister.runtimeconfig.dev.json
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/bin/Debug/net5.0/Mersenne Twister.dll
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/bin/Debug/net5.0/ref/Mersenne Twister.dll
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/bin/Debug/net5.0/Mersenne Twister.pdb
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/obj/Debug/net5.0/Mersenne Twister.csproj.AssemblyReference.cache
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/obj/Debug/net5.0/Mersenne Twister.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/obj/Debug/net5.0/Mersenne Twister.AssemblyInfoInputs.cache
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/obj/Debug/net5.0/Mersenne Twister.AssemblyInfo.cs
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/obj/Debug/net5.0/Mersenne Twister.csproj.CoreCompileInputs.cache
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/obj/Debug/net5.0/Mersenne Twister.dll
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/obj/Debug/net5.0/ref/Mersenne Twister.dll
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/obj/Debug/net5.0/Mersenne Twister.pdb
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/obj/Debug/net5.0/Mersenne Twister.genruntimeconfig.cache
+/Users/pasha/RiderProjects/Mersenne Twister/Mersenne Twister/bin/Debug/net5.0/Newtonsoft.Json.dll

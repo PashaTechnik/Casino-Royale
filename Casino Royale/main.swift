@@ -70,7 +70,25 @@ func getCoificientts(){
 }
 
 
-getCoificientts()
+//getCoificientts()
+//var i: Double
+//
+//for i in 1...1_000_000 {
+//    var res = (58.0*Double(i))/23
+//    if floor(res) == res {
+//        print(i)
+//        print(res)
+//        break
+//    }
+//}
+//
+//print(-860%50)
+
+
+//let seed: UInt = 5
+//var a = RandomMersenne(seed)
+//
+//print(a.BRandom())
 
 
 //197373647 = (a * 3576682619 + c) % pow(2,32)
