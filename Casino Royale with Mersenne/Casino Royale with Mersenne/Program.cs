@@ -23,9 +23,12 @@ namespace Mersenne_Twister
             
             //BetterMt.solveBetterMt();
             
-            BetterMt.Hacc();
+            //BetterMt.Hacc();
             
+            BetterMt.solveBetterMt();
             
+
+
             //Console.WriteLine(BetterMt.unBitShiftRightXor(-3, 23));
 
 
