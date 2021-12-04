@@ -8,9 +8,13 @@ namespace Mersenne_Twister
         
         public static void SolveLcg()
         {
-            var x1 = Networking.GetResult("Lcg", 1228, 1).Result.realNumber;
-            var x2 = Networking.GetResult("Lcg", 1228, 1).Result.realNumber;
-            var x3 = Networking.GetResult("Lcg", 1228, 1).Result.realNumber;
+            Random rand = new Random();
+            var id = rand.Next(1_000, 10_000);
+            Networking.CreateAccount(id);
+            
+            var x1 = Networking.GetResult("Lcg", id, 1).Result.realNumber;
+            var x2 = Networking.GetResult("Lcg", id, 1).Result.realNumber;
+            var x3 = Networking.GetResult("Lcg", id, 1).Result.realNumber;
 
             Console.WriteLine($"x1 = {x1}");
             Console.WriteLine($"x2 = {x2}");
@@ -24,7 +28,7 @@ namespace Mersenne_Twister
             {
                 double temp = x2 - x3 - i * m;
                 double _a = temp / (x1 - x2);
-
+            
                 if (Math.Floor(_a) == _a)
                 {
                     a = Convert.ToInt64(_a);
@@ -34,10 +38,19 @@ namespace Mersenne_Twister
                 }
             }
             
-            long c = 0;
-            
-            var coef = a * (x1 + x2);
-            c = (x3 + x2 - (m * M) - coef) / 2;
+            // for(M = -1000000; M < int.MaxValue; M++)
+            // {
+            //     double doubleA = ((double)x2 - (double)x3 - M * m) / (x1 - x2);
+            //     if(((int)doubleA) == doubleA)
+            //     {
+            //         Console.WriteLine(((double)x2- (double)x3 - M * m));
+            //         Console.WriteLine((x1 - x2));
+            //         a = (int)doubleA;
+            //         break;
+            //     }
+            // }
+            //
+            long c = (x3 + x2 - M * m - a * (x1 + x2)) / 2;
 
             if (c < 0)
             { 
@@ -56,14 +69,16 @@ namespace Mersenne_Twister
 
             Console.WriteLine($"c = {c}");
 
-            Console.WriteLine($"Next Number: {Next(a,c,x3)}");
+            //Console.WriteLine($"Next Number: {Next(a,c,x3)}");
+            
+            var response = Networking.GetResult("Lcg", id, Next(a,c,x3)).Result.message;
+            Console.WriteLine(response);
             
         }
         
         private static long Next(long a, long c, long last)
         {
-    
-            last = ((a * last) + c) % m;
+            last = (int)((a * last) + c) % m;
             return last;
         }
     }
@@ -71,6 +86,7 @@ namespace Mersenne_Twister
 
 //197373647 = (a * 3576682619 + c) % pow(2,32)
 //1511091214 = (a * 197373647 + c) % pow(2,32)
+
 //197373647 = (3576682619 * a)%pow(2,32) + c%pow(2,32)
 //197373647 = (3576682619 * a)%pow(2,32) + c%pow(2,32)
 // c%pow(2,32) = 197373647 - (3576682619 * a) % pow(2,32)

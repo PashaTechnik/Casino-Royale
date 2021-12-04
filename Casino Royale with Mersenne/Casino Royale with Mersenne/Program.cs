@@ -21,15 +21,12 @@ namespace Mersenne_Twister
             //Lcg.SolveLcg();
             //Mt.SolveMt();
             
-            //BetterMt.solveBetterMt();
-            
-            //BetterMt.Hacc();
-            
             BetterMt.solveBetterMt();
             
-
-
-            //Console.WriteLine(BetterMt.unBitShiftRightXor(-3, 23));
+            
+            //BetterMt.solveBetterMt();
+            
+            
 
 
 

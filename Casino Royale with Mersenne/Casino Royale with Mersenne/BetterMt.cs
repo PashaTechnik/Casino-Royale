@@ -7,11 +7,14 @@ namespace Mersenne_Twister
     {
         public static void solveBetterMt()
         {
+	        Random rand = new Random();
+	        var id = rand.Next(1_000, 10_000);
+	        Networking.CreateAccount(id);
             RandomMersenne mersenne = new RandomMersenne();
             uint[] state = new uint[624];
             for (int i = 0; i < 624; i++)
             {
-                var result = (uint) Networking.GetResult("BetterMt", 1246, 1).Result.realNumber;
+                var result = (uint) Networking.GetResult("BetterMt", id, 1).Result.realNumber;
                 state[i] = result;
                 Console.WriteLine($"{i} - {result}");
             }
@@ -19,11 +22,13 @@ namespace Mersenne_Twister
             var initState = backtrace(state);
     
             mersenne.mt = initState;
+
+            var num = mersenne.Random();
             
-            
-            Console.WriteLine($"Next Number: {mersenne.Random()}");
-            //mersenne.Random();
-    
+            var response = Networking.GetResult("BetterMt", id, num).Result.message;
+            Console.WriteLine(num);
+            Console.WriteLine(response);
+
         }
         public static long unBitShiftRightXor(long receivedValue, int numOfShifts)
         	{

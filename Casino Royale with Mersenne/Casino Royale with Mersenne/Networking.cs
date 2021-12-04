@@ -8,7 +8,7 @@ namespace Mersenne_Twister
 {
     public class Networking
     {
-        public static async Task<GameResult> GetResult(string gameName, int id, int number)
+        public static async Task<GameResult> GetResult(string gameName, int id, long number)
         {
             using HttpClient httpClient = new HttpClient();
             var requestUrl = $"http://95.217.177.249/casino/play{gameName}?id={id}&bet=1&number={number}";
